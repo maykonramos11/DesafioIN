@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="45.620275">
+    <testcase classname="Cadastro" name="Cadastro de usuario" time="45.620275">
+        <system-out>
+            <![CDATA[Dado que acesse o imrobot...................................................passed
+Quando clico em Cadastre-se.................................................passed
+E preencher o usuario "FernandoTeste22".....................................passed
+E preencher a Senha "1234"..................................................passed
+E preencher a Confirme a Senha "1234".......................................passed
+E clicar em Cadastre-se.....................................................passed
+Então validar que a conta foi cadastrada....................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

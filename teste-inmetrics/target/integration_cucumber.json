@@ -1,0 +1,162 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: pt"
+      }
+    ],
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 12374435700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.iniciar(Scenario)"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Cadastro de usuario",
+        "description": "",
+        "id": "cadastro;cadastro-de-usuario",
+        "after": [
+          {
+            "result": {
+              "duration": 919591300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.fechar(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 345490400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "que acesse o imrobot",
+            "match": {
+              "location": "CadastroStep.que_acesse_o_imrobot()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 1385787900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "clico em Cadastre-se",
+            "match": {
+              "location": "CadastroStep.clico_em_Cadastre_se()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 302376200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "preencher o usuario \"FernandoTeste22\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "FernandoTeste22",
+                  "offset": 21
+                }
+              ],
+              "location": "CadastroStep.preencher_o_usuario(String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 226336700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "preencher a Senha \"1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1234",
+                  "offset": 19
+                }
+              ],
+              "location": "CadastroStep.preencher_a_Senha(String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 170984600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "preencher a Confirme a Senha \"1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1234",
+                  "offset": 30
+                }
+              ],
+              "location": "CadastroStep.preencher_a_Confirme_a_Senha(String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 1479978500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "clicar em Cadastre-se",
+            "match": {
+              "location": "CadastroStep.clicar_em_Cadastre_se()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 28415293600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "validar que a conta foi cadastrada",
+            "match": {
+              "location": "CadastroStep.validar_que_a_conta_foi_cadastrada()"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@desafio1"
+          },
+          {
+            "line": 4,
+            "name": "@web"
+          }
+        ]
+      }
+    ],
+    "name": "Cadastro",
+    "description": "",
+    "id": "cadastro",
+    "keyword": "Funcionalidade",
+    "uri": "cadastro.feature"
+  }
+]

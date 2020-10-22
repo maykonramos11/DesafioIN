@@ -11,11 +11,43 @@ public class HomePage extends Util {
         PageFactory.initElements(getDriver(), this);
     }
 
-    @FindBy(xpath = "//*[@id=\"navbarSupportedContent\"]/ul/li[1]/a")
-    private WebElement elementoCriarConta;
+    @FindBy(xpath = "//span[contains(text(),'Login')]")
+    private WebElement elementoLogin;
 
-    public HomePage clicarElementoCriarConta()  {
-        clicarElemento(elementoCriarConta);
+    @FindBy(xpath = "//a[text()='Cadastre-se']")
+    private WebElement elementoCadastro;
+
+    @FindBy(name = "username")
+    private WebElement elementoUsuario;
+
+    @FindBy(name = "pass")
+    private WebElement elementoSenha;
+
+    @FindBy(className = "login100-form-btn")
+    private WebElement botaoEntrar;
+
+    public HomePage aguardandoHome (){
+        aguardarElemento(elementoLogin);
+        return this;
+    }
+
+    public HomePage clicarCadastro()  {
+        clicarElemento(elementoCadastro);
+        return this;
+    }
+
+    public HomePage inserirUsuario (String usuario){
+        inserirTextoElemento(elementoUsuario, usuario);
+        return this;
+    }
+
+    public HomePage inserirSenha (String senha){
+        inserirTextoElemento(elementoSenha, senha);
+        return this;
+
+    }
+    public HomePage clicarEntrar (){
+        clicarElemento(botaoEntrar);
         return this;
     }
 }
